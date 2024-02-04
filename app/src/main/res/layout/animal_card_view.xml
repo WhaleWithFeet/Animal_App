@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/Animal_image"
+            android:contentDescription="Picture of animal"
+            tools:src="@tools:sample/avatars"
+            />
+        <TextView
+            android:id="@+id/Animal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/Animal_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/Name_of_animal"
+            android:paddingStart="10dp"/>
+        <TextView
+            android:id="@+id/Animal_Size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Animal_title"
+            app:layout_constraintStart_toEndOf="@id/Animal_image"
+            android:text="@string/Size_of_animal"
+            android:paddingTop="5dp"
+            android:paddingStart="10dp"/>
+        <TextView
+            android:id="@+id/Animal_Life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Animal_Size"
+            app:layout_constraintStart_toEndOf="@id/Animal_image"
+            android:text="@string/Life_of_animal"
+            android:paddingTop="5dp"
+            android:paddingStart="10dp"/>
+        <TextView
+        android:id="@+id/Animal_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Animal_Life"
+        app:layout_constraintStart_toEndOf="@id/Animal_image"
+        android:text="@string/id_of_animal"
+            android:paddingTop="5dp"
+        android:paddingStart="10dp" />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

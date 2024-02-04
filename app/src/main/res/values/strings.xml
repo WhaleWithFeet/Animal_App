@@ -43,4 +43,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="id_of_animal">ID: %s</string>
+    <string name="Life_of_animal">Life Span: %s</string>
+    <string name="Size_of_animal">Size: %s</string>
+    <string name="Name_of_animal">Name: %s</string>
 </resources>
